@@ -17,13 +17,21 @@
 <style>
   body {
     overflow-x: hidden;
-    background-image: url('earth.jpg');
+    background-image: url('map.jpg');
     background-size: cover;
+  }
+  
+  #overlay {
+    background: rgba(0,0,0,0.4);
+    height: 100%;
+    width: 100%;
+    padding-top: 7px;
   }
 
   h1 {
     color: white;
     font-family: monospace;
+    margin-left: 3%;
   }
 
   #location {
@@ -33,7 +41,6 @@
     font-family: monospace;
     margin: 5% 10% 0 10%;
     color: white;
-    background: rgba(0, 0, 0, .5);
   }
 
   #findme {
@@ -50,10 +57,12 @@
   #map {
     height: 100%;
     width: 100%;
+/*    border: 2px solid black;*/
   }
 </style>
 
 <body>
+  <div id="overlay">
   <h1>Geolocation</h1>
   <div class="container-fluid">
     <div class="row">
@@ -66,6 +75,6 @@
   </div>
 
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNsKhr7OynuoY0Tj7BXHxSzGTvD2XiSzw&callback=initMap"></script>
-
+</div>
 </body>
 </html>
