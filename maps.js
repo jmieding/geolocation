@@ -17,7 +17,7 @@ function newMap(map, latitude, longitude) {
   });
 }
 
-function findMe() {
+function locate() {
   if ("geolocation" in navigator) {
     navigator.geolocation.getCurrentPosition(function(position) {
       var latitude = position.coords.latitude;

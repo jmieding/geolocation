@@ -1,0 +1,51 @@
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url('map2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  color: white;
+  font-family: monospace;
+  margin-left: 3%;
+}
+
+#location {
+  text-align: center;
+  vertical-align:middle;
+  font-size: 2em;
+  font-family: monospace;
+  margin: 5% 10% 0 10%;
+  color: white;
+}
+
+#button {
+  margin: 2% 0 2% 50%;
+  width: 180px;
+  transform:translate(-90px, 0);
+  font-size: 1.25em;
+}
+@media (max-width: 768px){
+  #button {
+    margin: 4% 0 4% 50%;
+  }
+}
+
+#map {
+  height: 300px;
+  width: 50%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  #map {
+    height: 200px;
+  }
+}
