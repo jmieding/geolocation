@@ -8,6 +8,7 @@ body {
   background-image: url('map2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 h1 {
@@ -21,31 +22,49 @@ h1 {
   vertical-align:middle;
   font-size: 2em;
   font-family: monospace;
-  margin: 5% 10% 0 10%;
+  margin: 5% 10% 3% 10%;
   color: white;
 }
 
 #button {
-  margin: 2% 0 2% 50%;
   width: 180px;
-  transform:translate(-90px, 0);
   font-size: 1.25em;
 }
-@media (max-width: 768px){
+@media (max-width: 991px){
   #button {
-    margin: 4% 0 4% 50%;
+    margin-top: 5%;
+    margin-left: 50%;
+    transform: translate(-90px, 0);
   }
 }
 
-#map {
-  height: 300px;
-  width: 50%;
-  margin: 0 auto;
-  padding: 0;
+#info {
+  background: white;
+  font-size: 1.25em;
+  font-family: monospace;
+  border: solid black 1px;
+  border-radius: 5px;
+  margin: 5% 0 5% 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
+  #info {
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+}
+
+#info p {
+  margin: 2% 0 2% 3%;
+}
+
+#map {
+  height: 400px;
+}
+
+@media (max-width: 991px) {
   #map {
     height: 200px;
+    margin: 0 10%;
   }
 }
